@@ -1,0 +1,233 @@
+body{
+    background: url(../imgs/Cosmos\ Star\ In\ The\ Night\ Vector.svg);
+    background-size:cover;
+    overflow-x: hidden;
+
+}
+.hamburger-menu{
+    width:35px;
+    height:30px;
+    position: fixed;
+    top:50px;
+    right:50px;
+    cursor: pointer;
+    display:flex;
+    justify-content:space-around;
+    flex-direction:column;
+    z-index:100;
+}
+.line{
+    width:100%;
+    height:3px;
+    background:#eee;
+    transition:all 1s;
+}
+
+.change .line-1{
+    transform:rotateZ(-405deg) translate(-8px, 6px);
+}
+.change .line-2{
+    opacity:0;
+}
+.change .line-3{
+    transform:rotateZ(405deg) translate(-8px, -6px);
+} 
+header{
+    height:100vh;
+    width:30%;
+     z-index:200;
+     position:fixed;
+     top:0px;    
+    
+}
+.navbar{
+    background:#262626b6;
+    height:100vh;
+    z-index:100;
+    left:-500px;
+    transition:all 1s;
+    
+}
+.change{
+    left:0px;
+}
+.navbar ul{
+    width:100%;
+   display:flex;
+   justify-content:center;
+   padding:10px 180px;
+   flex-direction: column;
+}
+
+
+.navbar ul li{
+    margin-bottom:50px;
+    list-style:none;
+}
+.navbar ul li > a{
+    color:#eee;
+    text-decoration:none;
+    font-size:25px;
+    opacity:.4;
+    transition:all 1s;
+}
+
+.navbar ul li > a:hover{
+   margin-left:25px;
+   opacity:unset;
+   color:#fff;
+   text-shadow:0 0 5px #fff,
+   0 0 15px #fff,
+   0 0 30px #fff,
+   0 0 60px #fff;
+
+
+}
+
+
+
+/*setion1*/
+.sesion1{
+    position:absolute;
+    top:0px;
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    
+}
+
+.sesion1__content1{
+    width:300px;
+    height:200px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    position: absolute;
+    
+}
+.sesion1__content1 > h1{
+    font-size:100px;
+    color:#eee;
+    text-shadow:1px 6px 10px rgba(0,0,0,.6);
+}
+#particles-js{
+    position:absolute;
+    width:100%;
+    height:100vh;
+}
+
+::-webkit-scrollbar{
+    width:8px;
+    background:#0E6251;
+}
+::-webkit-scrollbar-thumb{
+    background:#eee ;
+    border-radius:50px;
+}
+
+/*section two*/
+.sesion2{
+    margin-top:900px;
+}
+.sesion2__article1{
+    color:#eee;
+    padding:10px 30px;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.artile1__content1{
+    width:50%;
+    height:500px;
+    padding-top:100px;
+    padding-left:20px;
+}
+.artilce1__img{
+    width:50%;
+    height:500px;
+}
+.artilce1__img > img{
+    width:100%;
+    height:100%;
+}
+
+
+/*mostrar con scroll*/
+.animado{
+    opacity:0;
+}
+.down{
+    animation: down 1s linear;
+}
+@keyframes down{
+    0%{
+        transform:translateY(50px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+
+/*article two*/
+.articulo2{
+    color:#eee;
+    display:flex;
+    justify-content: center;
+    margin-top:200px;
+}
+.articulo2 > div{
+    width:80%;
+}
+#articulo2__img{
+    width:500px;
+    float:right;
+}
+
+
+
+/**artile three*/
+
+.articulo3{
+    margin-top:400px;
+}
+.article3__content{
+    color:#eee;
+    display:flex;
+    padding:0px 50px;
+}
+.art1{
+    padding:0px 20px;
+}
+
+
+
+/*article four*/
+.article4{
+    text-align: center;
+    margin-top:200px;
+}
+.article4__contents{
+    display:flex;
+    padding:0px 30px;
+    color:#eee;
+    margin-top:100px;
+}
+.art4{
+    padding:0px 20px;
+    text-align: left;
+}
+
+
+
+/*footer*/
+footer{
+    background:#262626;
+    height:25vh;
+    color:#eee;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
